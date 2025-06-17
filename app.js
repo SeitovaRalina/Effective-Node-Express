@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // Set up mongoose connection
-const mongoURI = "";
+const { mongoURI } = require('./config');
 const mongoose = require("mongoose");
 
 mongoose.set("strictQuery", false);
